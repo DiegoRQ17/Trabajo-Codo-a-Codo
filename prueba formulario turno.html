@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Prueba para formulario final</h2>
+    <form action="mostrar_datos.html" target="_blank">
+        <label for="id1">Nombre</label>
+        <input type="text" name="nom_usu" id="id1" placeholder="Ingrese su Nombre" required>
+        <br></br>
+        <label for="id2">Apellido</label>
+        <input type="text" name="ape_usu" id="id2" placeholder="Ingrese su Apellido" required>
+        <br></br>
+        <label for="id3">DNI</label>
+        <input type="number" name="nro_dni" id="id3" min="1000000" max="99999999" required>
+        <br></br>
+        <label for="id4"></label>
+        <input type="email" name="mail" id="id4" placeholder="Correo Electronico" required>
+        <br></br>
+        <label for="id5"></label>
+        <input type="number" name="" id="id5" placeholder="Codigo">
+        <label for="">-</label>
+        <label for="id6"></label>
+        <input type="number" name="" id="id6" placeholder="Telefono">
+        <br></br>
+        <label for="id7">Tipo de Tramite</label>
+        <select name="tramite">
+            <option>Alta de Cuenta</option>
+            <option>Baja de Cuenta</option>
+            <option>Retiro de Targeta</option>
+            <option>Consulta de Prestamos</option>
+        </select>
+        <br><br>
+        <br></br>
+        <label for="">Selecione la fecha del turno</label>
+        <input type="date" name="fecha_turno" id="">
+        <br></br>
+        <label for="">Seleccione un horario</label>
+        <input type="time" name="hora_turno" id="" min="10" max="16">
+        <br></br>
+        <input type="submit" value="Continuar">
+        
+        
+    </form>
+</body>
+</html>
