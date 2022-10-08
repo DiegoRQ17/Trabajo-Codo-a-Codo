@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+/*  
+PALETA DE COLORES ELEGIDA:
+.color1 { #8e978d }; GRIS
+.color2 { #97c4ad }; GRIS / CELESTE
+.color3 { #bfedbe }; VERDE / CELESTE
+.color4 { #e6fcd9 }; BLANCO / CELESTE
+.color5 { #cdf2d6 };
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter Tight';}
+
+body {
+  max-width: 100%;
+}
+
+.contenedor-navbar {
+  display: inline-grid;
+  background-color: #193a60;
+  width: 100%;
+  height: 10vh;
+  grid-template-columns: 15vw 15vw 70vw;
+  align-content: center;
+}
+
+.nav-logo img {
+  height: 10vh;
+}
+
+.nav-logo {
+  background-color: #193a60;
+  height: 10vh;
+}
+
+.nombre-banco p{
+  grid-column-start: 2;
+  font-size: 4vh;
+  text-align: left;
+  align-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #e6fcd9;
+  height: 10vh;
+  position: absolute;
+  top: 3%;
+}
+
+.contenedor-links{
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 14vw 14vw;
+  column-gap: 2vw;
+}
+
+.nav-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position:absolute;
+  top: 3%;
+}
+
+.carousel-container {
+  position: relative;
+  margin: auto;
+  background-color: #e6fcd9;
+}
+
+.carousel-image {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover, a:hover {
+  background-color: #8e978d;
+}
+
+.text {
+  color: #8e978d;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #8e978d;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ESTILOS DE INICIO SESIÓN*/
+
+.contenedor_principal {
+  display: grid;
+  grid-template-columns: 50% 50%;  
+  max-width: 100%;
+  background-color: #549975;
+}
+
+.contenedor-texto {
+  display: grid;
+  margin: 10px;
+  padding: 8px 12px;
+  bottom: 8px;
+  border-bottom: solid;
+  border-color: #8e978d;
+}
+
+.texto-principal {
+  color: #e6fcd9;
+  font-size: 20px;
+  font-weight: bold;
+  align-content:center;
+}
+
+/* ESTILOS DE TURNOS */
+
+/* separe el contenedor principal en 2 mitades (2 columnas) */
+.contenedor_principal {
+  display: grid;
+  grid-template-columns: 50% 50%;  
+  max-width: 100%;
+
+}
+/* le coloque una imagen de fondo a la mitad del contenedor principal con una altura
+del "80%" de la pantalla */
+.foto_fondo {
+  background-image: url(../img/prueba.jpg);
+  height: 80vh;
+}
+/* con 10vh le di la altura respecto al contenedor principal que es de 80vh y los
+separe en dos partes con grid y que tengan el 10% para el logo y el resto para el
+nombre del banco*/
+.encabezado {
+  height: 10vh;
+  background-color: rgb(17, 17, 17);
+  display: grid;
+  grid-template-columns: 10vw 90vw;
+}
+/* le di este alto a la imagen para que no se salga del alto del header */
+.contenedor_logo img {
+  height: 10vh;
+}
+/* con 10vh le di la altura respecto al contenedor principal y al header(suma total 
+de los 3 10vh+80vh+10vh=100vh) */
+.prueba_footer {
+  height: 10vh;
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor_formulario {
+  display: grid;
+  align-items: center;
+  background-color: #549975;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  width: 95%;
+  height: 90vh;
+}
+
+.contenedor_btn {
+  display: grid;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_enviar {
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .1s ease all;
+}
+
+.labels {
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.labels_desplegables {
+  text-align: end;
+}
+
+.inputs {
+  width: 100%;
+  background: #e6fcd9;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: .3s ease all;
+}
+
+.inputs:focus {
+  border: 3px solid rgb(79, 0, 224);
+  outline: none;
+  box-shadow: 3px 0px 30px rgb(245, 8, 8, 0.4)r;
+}
+
+.div_inputs {
+  max-width: 100%;
+}
+
+.div_inputs_2 {
+  max-width: 100%;
+}
+
+.select_tramite {
+  width: 50%;
+}
+
+h1, h3 {
+  color: #fff;
+}
+/**/

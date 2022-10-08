@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciá sesión / Registrate</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor-navbar">
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="img/logo.webp" width="100vh">
+                </a>
+            </div>
+            <div class="nombre-banco">
+                <p>Banco Nuevo Horizonte</p>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="index.html">INICIO</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">MI CUENTA</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="#">TRANSFERENCIAS</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="turnos.html">SOLICITAR UN TURNO</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="inicio_sesion.html">INICIÁ SESIÓN / REGISTRATE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor_principal">
+        <div class="contenedor-texto">
+            <span class="texto-principal"> ¿Ya sos usuario? INICIÁ SESIÓN</span>
+        </div>
+        <div class="contenedor-texto">
+            <span class="texto-principal"> ¿No sos usuario? REGISTRATE</span>
+        </div>
+        <div class="formulario">
+            <div>
+                <label for="id1" class="labels">Usuario: </label>
+                <div>
+                    <input type="text" name="usuario" class="inputs" placeholder="Ingrese su usuario"
+                        required>
+                </div>
+            </div>
+            <div>
+                <label for="id1" class="labels">Contraseña: </label>
+                <div>
+                    <input type="password" name="contrasenia" class="inputs" placeholder="Ingrese su contraseña"
+                        required>
+                </div>
+            </div>
+            <div class="contenedor_btn">
+                <input type="submit" class="btn_enviar" value="Iniciá sesión">
+            </div>
+        </div>
+        <div class="formulario">
+            <div>
+                <label for="id1" class="labels">Nombre</label>
+                <div>
+                    <input type="text" name="nombre" class="inputs" id="id1" placeholder="Ingrese su Nombre"
+                        required>
+                </div>
+            </div>
+
+            <div>
+                <label for="id2" class="labels">Apellido</label>
+                <div>
+                    <input type="text" name="apellido" class="inputs" id="id2" placeholder="Ingrese su Apellido"
+                        required>
+                </div>
+            </div>
+
+            <div>
+                <label for="id3" class="labels">DNI</label>
+                <div>
+                    <input type="number" name="dni" class="inputs" id="id3" min="1000000" max="99999999"
+                        required>
+                </div>
+            </div>
+
+            <div>
+                <label for="id4" class="labels">Email</label>
+                <div>
+                    <input type="email" name="email" class="inputs" id="id4" placeholder="Correo@correo.com"
+                        required>
+                </div>
+            </div>
+
+            <div>
+                <label for="id5" class="labels">Código Area</label>
+                <div>
+                    <input type="number" name="cod_area" class="inputs" id="id5" placeholder="Código">
+                </div>
+            </div>
+
+            <div>
+                <label for="id6" class="labels">Telefono</label>
+                <div>
+                    <input type="number" name="telefono" class="inputs" id="id6" placeholder="Nro. telefono">
+                </div>
+            </div>
+
+            <div class="contenedor_btn">
+                <input type="submit" class="btn_enviar" value="Enviar">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="prueba_footer">
+        <h3>ALDERETE, Iván Martín. QUINTANA, Diego. TOLARECHIPI, Juan Ignacio.</h3>
+    </div>
+</body>
+</html>
