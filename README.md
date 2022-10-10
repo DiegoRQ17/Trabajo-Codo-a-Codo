@@ -1,2 +1,2 @@
 # Trabajo-Codo-a-Codo
-Trabajo pregreso
+Trabajo progreso
