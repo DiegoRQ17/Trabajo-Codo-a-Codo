@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* separe el contenedor principal en 2 mitades (2 columnas) */
+.contenedor_principal {
+    display: grid;
+    grid-template-columns: 50% 50%;  
+    max-width: 100%;
+
+}
+/* le coloque una imagen de fondo a la mitad del contenedor principal con una altura
+del "80%" de la pantalla */
+.foto_fondo {
+    background-image: url(../img/prueba.jpg);
+    height: 80vh;
+}
+/* con 10vh le di la altura respecto al contenedor principal que es de 80vh y los
+separe en dos partes con grid y que tengan el 10% para el logo y el resto para el
+nombre del banco*/
+.encabezado {
+    height: 10vh;
+    background-color: rgb(17, 17, 17);
+    display: grid;
+    grid-template-columns: 10vw 90vw;
+}
+/* le di este alto a la imagen para que no se salga del alto del header */
+.contenedor_logo img {
+    height: 10vh;
+}
+/* esto es para "centrar" el nombre del banco respecto del logo (a ojo) */
+.nombre_banco {
+    text-align: left;
+    width: 300px;
+    margin: 0;
+    top: 3%;
+    left: 10%;
+    grid-template-columns: 100vw 0vw;
+}
+/* con 10vh le di la altura respecto al contenedor principal y al header(suma total 
+de los 3 10vh+80vh+10vh=100vh) */
+.prueba_footer {
+    height: 10vh;
+    background-color: rgb(12, 12, 12);
+    display: grid;
+    flex-direction: column;
+}
+
+.contenedor_formulario {
+    display: grid;
+    align-items: center;
+    background-color: rgb(210, 228, 222);
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    width: 95%;
+    height: 50vh;
+}
+
+.contenedor_btn {
+    display: grid;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_cerrarcuenta {
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: rgb(9, 44, 245);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.labels {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.inputs {
+    width: 100%;
+    background: rgb(127, 196, 252);
+    border: 3px solid transparent;
+    border-radius: 15px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.inputs:focus {
+    border: 3px solid rgb(79, 0, 224);
+    outline: none;
+    box-shadow: 3px 0px 30px rgb(245, 8, 8, 0.4)r;
+}
+
+.div_inputs {
+    max-width: 100%;
+}
+
+.div_inputs_2 {
+    max-width: 100%;
+}
+
+.saldo_$ {
+    width: 50%;
+}
+
+h1, h3 {
+    color: #fff;
+}
+/**/
