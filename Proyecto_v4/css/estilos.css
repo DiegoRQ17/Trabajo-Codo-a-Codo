@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+/*  
+
+PALETA DE COLORES ELEGIDA:
+.color1 { #004173 };
+.color2 { #0979b0 };
+.color3 { #40cfff };
+.color4 { #7cdaf9 };
+.color5 { #b6ffff };
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter Tight';
+}
+
+body {
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #b6ffff;
+}
+
+/*este no lo use en las otras paginas de turnos(use la clase de encabezado)*/
+.contenedor-navbar {
+  display: grid;
+  background-color: #0979b0;
+  width: 100%;
+  height: 10vh;
+  grid-template-columns: 10vw 20vw 70vw;
+}
+
+/*tampoco lo use en las demas paginas a no ser la de inicio*/
+.nav-logo img {
+  height: 10vh;
+}
+
+.nav-logo {
+  background-color: #40cfff;
+  height: 10vh;
+}
+
+.contenedor-links {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 14vw 14vw;
+  column-gap: 2vw;
+}
+
+.nav-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 3%;
+}
+
+.contenedor_slider {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
+  background-color: #40cfff;
+}
+
+.span_izq,
+.span_der {
+  background-color: #40cfff;
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+}
+
+.slider li {
+  list-style: none;
+  width: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: 55vh;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+
+  20% {
+    margin-left: 0%;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -300%;
+  }
+}
+
+a:hover {
+  background-color: #004173;
+}
+
+.contenedor_iframe {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  height: 30vh;
+}
+
+/* ESTILOS DE INICIO SESIÓN*/
+
+.contenedor_principal {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  height: 80vh;
+  background-color: #40cfff;
+}
+
+.contenedor-texto {
+  display: grid;
+  height: 10vh;
+  margin: 10px;
+  padding: 8px 12px;
+  bottom: 8px;
+  border-bottom: solid;
+  border-color: #004173;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.texto-principal {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formulario_sesion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  width: 95%;
+  height: 70vh;
+}
+
+.contenedor_btn_sesion {
+  display: grid;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+}
+
+/*espacio que tienen los divs de la parte de iniciar sesion*/
+.div_sesion_1 {
+  height: 20vh;
+}
+
+/*espacio que tienen los divs de la parte de iniciar registro*/
+.div_sesion_2 {
+  height: 10vh;
+}
+
+.contenedor_btn_registro {
+  display: grid;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+}
+
+
+/* ESTILOS DE TURNOS */
+
+/* separe el contenedor principal en 2 mitades (2 columnas) */
+.contenedor_principal {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  height: 85vh;
+}
+
+/* le coloque una imagen de fondo a la mitad del contenedor principal con una altura
+del "80%" de la pantalla */
+.foto_fondo {
+  background-image: url(../img/prueba.jpg);
+  height: 85vh;
+}
+
+/* con 10vh le di la altura respecto al contenedor principal que es de 80vh y los
+separe en dos partes con grid y que tengan el 10% para el logo y el resto para el
+nombre del banco*/
+.encabezado {
+  height: 10vh;
+  background-color: #0979b0;
+  display: grid;
+  grid-template-columns: 10vw 90vw;
+}
+
+/* le di este alto a la imagen para que no se salga del alto del header */
+.contenedor_logo {
+  overflow: hidden;
+  background-color: #0979b0;
+}
+.contenedor_logo img {
+  height: 10vh;
+}
+
+/* esto es para "centrar" el nombre del banco respecto del logo (a ojo) */
+.nombre_banco {
+  text-align: left;
+  width: 500px;
+  margin: 0;
+  top: 3%;
+  left: 10%;
+  position: absolute;
+}
+
+/* con 5vh le di la altura respecto al contenedor principal y al header(suma total 
+de los 3 10vh+85vh+5vh=100vh) */
+.prueba_footer {
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0979b0;
+}
+
+.contenedor_formulario {
+  display: grid;
+  align-items: center;
+  background-color: #40cfff;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  width: 95%;
+  height: 50vh;
+}
+
+/* preguntar lo del grid */
+.contenedor_btn {
+  display: grid;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_enviar {
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #004173;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .1s ease all;
+}
+
+.labels {
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.labels_desplegables {
+  text-align: end;
+}
+
+.inputs {
+  width: 100%;
+  background: #0979b0;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: .3s ease all;
+}
+
+.inputs:focus {
+  border: 3px solid #004173;
+  outline: none;
+  box-shadow: 3px 0px 30px rgb(245, 8, 8, 0.4)r;
+}
+
+.div_inputs_izq {
+  max-width: 100%;
+}
+
+.div_inputs_der {
+  max-width: 100%;
+}
+
+.select_tramite {
+  width: 50%;
+}
+
+h1,
+h3 {
+  color: #fff;
+}
+
+/*estilos cuenta*/
+
+.encabezado_cuenta {
+  height: 10vh;
+  background-color: #0979b0;
+  display: grid;
+  grid-template-columns: 10vw 30vw 60vw;
+}
+
+.contenedor_cuenta {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  max-width: 100%;
+  height: 55vh;
+}
+
+.contenedor_info {
+  display: grid;
+  width: 100%;
+  height: 50vh;
+}
+
+.contenedor_datos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #40cfff;
+}
+
+.contenedor_info_cta_btn {
+  background-color: #004173;
+}
+
+.datos_cliente {
+  padding: 2%;
+  align-items: center;
+  text-align: center;
+  max-height: 55vh;
+}
+
+.contenedor_datos h2 {
+  color: #000;
+}
+
+.titulo_datos {
+  display: grid;
+  grid-column: span 2;
+}
+
+.contenedor_ultimos_movimientos {
+  height: 30vh;
+  display: grid;
+  background-color: #b6ffff;
+}
+
+.contenedor_btn_cerrar_cta {
+  display: grid;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 5vh;
+}
+
+.btn_cerrar_cta {
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .1s ease all;
+}
+
+.titulo_tabla td {
+  display: grid;
+  grid-column: span 4;
+}
+
+.contenedor_ultimos_movimientos h1 {
+  color: #000;
+  display: flex;
+}
+
+.contenedor_ultimos_movimientos table {
+  max-height: 100%;
+  width: 100%;
+}
+
+.contenedor_ultimos_movimientos tr {
+  text-align: left;
+  padding: 1px 1px;
+}
+
+/* Con esto le di el tamaño que queria a cada columna de la tabla */
+/* Precio 10%, Comcepto 20%, Importe 30% y Destinatario 30% */
+/* Cambien el ultimo valor de 40% a 30% por que con 40% aparecia un scroll horizontal(preguntar)*/
+tr {
+  display: grid;
+  grid-template-columns: 10vw 20vw 30vw 30vw;
+}
+
+.datos_cliente p {
+  color: #000;
+}
+
+.contenedor_links_cuenta {
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw 15vw;
+}
+
+.cuenta_item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cuenta_link {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 3%;
+}
+
+/* Estilos Transferencias */
+
+.encabezado_transferecias {
+  height: 10vh;
+  background-color: rgb(17, 17, 17);
+  display: grid;
+  grid-template-columns: 10vw 30vw 60vw;
+}
+
+.contenedor_transferencias {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  max-width: 100%;
+  height: 55vh;
+}
+
+.contenedor_nueva_transferencia {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #549975;
+}
+
+.contenedor_nueva_transferencia,
+.datos_cliente {
+  padding: 2%;
+  align-items: center;
+  text-align: center;
+  max-height: 55vh;
+}
+
+.contenedor_nueva_transferencia h2 {
+  color: #000;
+}
+
+.titulo_nueva_transferencia {
+  display: grid;
+  grid-column: span 2;
+}
+
+.contenedor_ultimas_transferencias {
+  height: 30vh;
+  display: grid;
+  background-color: aqua;
+}
+
+.contenedor_btn_transferir {
+  display: grid;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_transferir {
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .1s ease all;
+}
+
+.titulo_tabla td {
+  display: grid;
+  grid-column: span 4;
+}
+
+.contenedor_ultimas_transferencias h1 {
+  color: #000;
+  display: flex;
+}
+
+.contenedor_ultimas_transferencias table {
+  max-height: 100%;
+  width: 100%;
+}
+
+.contenedor_ultimas_transferencias tr {
+  text-align: left;
+  padding: 1px 1px;
+}
+
+/* Con esto le di el tamaño que queria a cada columna de la tabla */
+/* Precio 10%, Comcepto 20%, Importe 30% y Destinatario 30% */
+/* Cambien el ultimo valor de 40% a 30% por que con 40% aparecia un scroll horizontal(preguntar)*/
+tr {
+  display: grid;
+  grid-template-columns: 10vw 20vw 30vw 30vw;
+}
+
+.datos_cliente p {
+  color: #000;
+}
+
+.contenedor_links_transferencias {
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw 15vw;
+}
+
+.transferencia_item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transferencia_link {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 3%;
+}
