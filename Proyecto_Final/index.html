@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Nuevo Horizonte Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/museo.ico">
+</head>
+
+<body>
+    <div class="contenedor-navbar">
+        <div class="contenedor_logo">
+            <a href="index.html">
+                <img src="img/Logo_Banco.JPG" alt="logo_banco" width="100%">
+            </a>
+        </div>
+        <div>
+            <h1 class="nombre_banco">Banco Nuevo Horizonte</h1>
+        </div>
+
+        <div class="contenedor-links">
+            <div class="nav-item">
+                <a class="nav-link" href="index.html">INICIO</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="cuenta.html">MI CUENTA</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="transferencias.html">TRANSFERENCIAS</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="turnos.html">SOLICITAR UN TURNO</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="inicio_sesion.html">INICIÁ SESIÓN / REGISTRATE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor_slider">
+
+        <div class="slider">
+            <ul>
+                <li><img src="img/tarjeta.jpg" alt="imagen_1"></li>
+                <li><img src="img/app.jpg" alt="imagen_1"></li>
+                <li><img src="img/prestamos.jpg" alt="imagen_1"></li>
+                <li><img src="img/estafas.jpg" alt="imagen_1"></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="contenedor_iframe">
+        <div class="iframe_cotizacion">
+            <iframe
+                src="https://es.widgets.investing.com/live-currency-cross-rates?theme=lightTheme&cols=bid,ask,changePerc,time&pairs=1505,1608,2090,10453"
+                width="100%" height="100%" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0">
+            </iframe>
+        </div>
+        <div class="contacto">
+            <h1>¡Contactanos!</h1>
+            <br>
+            <p>De Lunes a Viernes de 08 a 20 hs.</p>
+            <br>
+            <p>A nuestro Centro de Atención al Cliente</p>
+            <p>0800-222-0410</p>
+            <br>
+            <p>Denuncias Mastercard (crédito)</p>
+            <p>(011) 4521-1212</p>
+            <br>
+            <p>Denuncias Visa (crédito)</p>
+            <p>(011) 4654-5710</p>
+        </div>
+        <div class="informacion_legal">
+            <h1>Información legal</h1>
+            <br>
+            <p>PEPs y Sujetos Obligados</p>
+            <br>
+            <p>Agente Institorio N° 29</p>
+            <br>
+            <p>FATCA-CRS</p>
+            <br>
+            <p>Comparación de Comisiones</p>
+            <br>
+            <p>www.usuariosfinancieros.gob.ar</p>
+            <br>
+            <p>Defensa de las personas consumidoras - Para reclamos</p>
+        </div>
+        <div class="suscripcion">
+            <form action="https://formsubmit.co/65c41ac26ee8df6b8f82c8bde6415d00" method="POST">
+                <div class="contenedor_formulario_suscripcion">
+                    <div class="msj_suscripcion">
+                        <h1>¡Suscribite!</h1>
+                    </div>
+                    <label for="nombre_suscripcion" class="labels">Nombre</label>
+                    <div>
+                        <input type="text" name="nom_usu" class="inputs_suscripcion" id="nombre_suscripcion"
+                            placeholder="Ingrese su Nombre" required>
+                    </div>
+                    <label for="ape_suscripcion" class="labels">Apellido</label>
+                    <div>
+                        <input type="text" name="ape_usu" class="inputs_suscripcion" id="ape_suscripcion"
+                            placeholder="Ingrese su Apellido" required>
+                    </div>
+                    <label for="mail_suscripcion" class="labels">Email</label>
+                    <div>
+                        <input type="email" name="mail" class="inputs_suscripcion" id="mail_suscripcion"
+                            placeholder="Correo@correo.com" required>
+                    </div>
+                    <label for="id7" class="labels">Selecione un interés</label>
+                    <select name="tramite" class="select_tramite_suscripcion">
+                        <option>Promociones y Beneficios </option>
+                        <option>Empresas </option>
+                        <option>Subastas </option>
+                        <option>Estudios Económicos</option>
+                    </select>
+                    <div class="contenedor_btn_suscripcion">
+                        <button type="submit" class="btn_enviar">Enviar</button>
+                    </div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>QUINTANA, Diego.</h3>
+    </div>
+</body>
+
+</html>

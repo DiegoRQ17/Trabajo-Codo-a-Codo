@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Nuevo Horizonte Turnos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/museo.ico">
+</head>
+
+<body>
+    <div class="encabezado">
+        <div class="contenedor_logo">
+            <a href="index.html">
+                <!-- Aca hago que la imagen me lleve al inicio -->
+                <img src="img/Logo_Banco.JPG" alt="logo_banco" width="100%">
+            </a>
+        </div>
+        <h1 class="nombre_banco">Banco Nuevo Horizonte</h1>
+    </div>
+    <form action="" target="" class="formulario" id="formulario">
+        <div class="contenedor_principal">
+            <div class="foto_fondo"></div>
+
+            <div class="contenedor_formulario">
+                <div class="formulario_div" id="formulario_turnos">
+                    <div class="grupo_formulario" id="grupo_nombre">
+                        <label for="nombre" class="labels">Nombre</label>
+                        <div class="div_inputs_izq">
+                            <input type="text" name="nom_usu" class="inputs" id="nombre" placeholder="Ingrese su Nombre"
+                                required>
+                            <i class="formulario_validacion_estado"></i>
+                        </div>
+                        <p class="validacion_inputs_error">Solo deben ser letras y espacios</p>
+                    </div>
+
+                    <div class="grupo_formulario" id="grupo_apellido">
+                        <label for="apellido" class="labels">Apellido</label>
+                        <div class="div_inputs_der">
+                            <input type="text" name="ape_usu" class="inputs" id="apellido"
+                                placeholder="Ingrese su Apellido" required>
+                            <i class="formulario_validacion_estado"></i>
+                        </div>
+                        <p class="validacion_inputs_error">Solo deben ser letras y espacios</p>
+                    </div>
+
+                    <div class="grupo_formulario" id="grupo_dni">
+                        <label for="dni" class="labels">DNI</label>
+                        <div class="div_inputs_izq">
+                            <input type="number" name="nro_dni" class="inputs" id="dni" min="1000000" max="99999999"
+                                required>
+                            <i class="formulario_validacion_estado"></i>
+                        </div>
+                        <p class="validacion_inputs_error">Solo numeros, 7 a 10 digitos</p>
+                    </div>
+
+                    <div class="grupo_formulario" id="grupo_email">
+                        <label for="email" class="labels">Email</label>
+                        <div class="div_inputs_der">
+                            <input type="email" name="correo" class="inputs" id="email" placeholder="Correo@correo.com"
+                                required>
+                            <i class="formulario_validacion_estado"></i>
+                        </div>
+                        <p class="validacion_inputs_error">Solo letras, numeros, puntos, guiones y guion bajo.</p>
+                    </div>
+
+                    <div class="grupo_formulario" id="grupo_code_area">
+                        <label for="code_area" class="labels">Codgo Area</label>
+                        <div class="div_inputs_izq">
+                            <input type="number" name="codigo_area" class="inputs" id="code_area" placeholder="Codigo">
+                            <i class="formulario_validacion_estado"></i>
+                        </div>
+                        <p class="validacion_inputs_error">Solo numeros, 2 a 4 digitos</p>
+                    </div>
+
+                    <div class="grupo_formulario" id="grupo_tel">
+                        <label for="tel" class="labels">Telefono</label>
+                        <div class="div_inputs_der">
+                            <input type="number" name="nro_tel" class="inputs" id="tel" placeholder="Nro. telefono">
+                            <i class="formulario_validacion_estado"></i>
+                        </div>
+                        <p class="validacion_inputs_error">Solo numeros, 7 a 14 digitos</p>
+                    </div>
+
+                    <label for="id7" class="labels_desplegables">Tipo de Tramite</label>
+                    <select name="tramite" class="select_tramite" id="id7">
+                        <option>Alta de Cuenta </option>
+                        <option>Baja de Cuenta</option>
+                        <option>Retiro de Targeta</option>
+                        <option>Consulta de Prestamos</option>
+                    </select>
+
+                    <label for="id8" class="labels_desplegables">Selecione la fecha del turno</label>
+                    <input type="date" name="fecha_turno" class="select_tramite" id="id8">
+
+                    <label for="id9" class="labels_desplegables">Seleccione un horario</label>
+                    <!--<input type="time" name="hora_turno" class="prueb" id="id9">-->
+                    <!-- preguntar por una forma de limitar el input time-->
+                    <select name="hora_turno" class="select_tramite" id="id9">
+                        <option>10:00</option>
+                        <option>10:30</option>
+                        <option>11:00</option>
+                        <option>11:30</option>
+                        <option>12:00</option>
+                        <option>12:30</option>
+                        <option>13:00</option>
+                        <option>13:30</option>
+                        <option>14:00</option>
+                        <option>14:30</option>
+                        <option>15:00</option>
+                        <option>15:30</option>
+                        <option>16:00</option>
+                    </select>
+
+                    <div class="formulario_mensaje" id="formulario_mensaje">
+                        <p><b>Error:</b> Por favor rellena el formulario correctamente.</p>
+                    </div>
+
+                    <div class="grupo_formulario contenedor_btn">
+                        <button type="submit" class="btn_enviar">Enviar</button>
+                        <p class="formulario_mensaje_exito" id="formulario_mensaje_exito">Formulario enviado
+                            exitosamente!</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+
+    <div class="footer">
+        <h3>QUINTANA, Diego.</h3>
+    </div>
+    <script src="js/formulario_turnos.js"></script>
+
+</body>
+
+</html>
